@@ -1,22 +1,22 @@
 <div class="jumbotron">
-  <h2><%= @welcome_text %></h2>
-  <p class="lead">A productive web framework that<br />does not compromise speed and maintainability.</p>
+  <h2>DEBUG: <%= @welcome_text %></h2>
 </div>
 
 <div class="row marketing">
   <div class="col-lg-6">
-    <h4>Resources</h4>
-    <ul>
-      <li>
-        <a href="http://phoenixframework.org/docs/overview">Guides</a>
-      </li>
-      <li>
-        <a href="https://hexdocs.pm/phoenix">Docs</a>
-      </li>
-      <li>
-        <a href="https://github.com/phoenixframework/phoenix">Source</a>
-      </li>
-    </ul>
+    <h4>Error Using CSS Selector child:</h4>
+    <button drab-click='change_select_1'>Click here to try change the select 1(bug)</button>
+    <button drab-click='change_select_2'>Click here to try change the select 2(bug)</button>
+
+    <select id="select-1">
+      <option>select 1 - opt 1</option>
+      <option>select 1 - opt 2</option>
+    </select>
+
+    <select id="select-2">
+      <option>select 2 - opt 1</option>
+      <option>select 2 - opt 2</option>
+    </select>
   </div>
 
   <div class="col-lg-6">
