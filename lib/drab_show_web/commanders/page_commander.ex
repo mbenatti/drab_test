@@ -25,7 +25,9 @@ defmodule DrabShowWeb.PageCommander do
           |> safe_to_string()
 
     poke socket, welcome_text: "Changed by change_select_1"
-    set_prop socket, "select:nth-child(1)", innerHTML: html
+
+#    set_prop socket, "select:last-of-type", innerHTML: html
+    set_prop socket, "div:nth-child(1) select:last-of-type", innerHTML: html
   end
 
   def change_select_2(socket, sender) do
@@ -36,6 +38,6 @@ defmodule DrabShowWeb.PageCommander do
           |> safe_to_string()
 
     poke socket, welcome_text: "Changed by change_select_2"
-    set_prop socket, "select:nth-child(2)", innerHTML: html
+    set_prop socket, "select:nth-child(4)", innerHTML: html
   end
 end
